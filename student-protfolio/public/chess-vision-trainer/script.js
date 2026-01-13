@@ -97,7 +97,10 @@ for (let row = 0; row < 8; row++) {
           startCol === endCol
         ) {
           return true;
-        } else if (
+        }
+        // Logic for white pawn capture.
+        else if (
+          pieceType === "P" &&
           startRow - endRow === 1 &&
           Math.abs(startCol - endCol) === 1 &&
           endSquare.querySelector("img") !== null
@@ -117,6 +120,13 @@ for (let row = 0; row < 8; row++) {
           pieceType === "pd" &&
           startRow - endRow === -1 &&
           startCol === endCol
+        ) {
+          return true;
+        } else if (
+          pieceType === "pd" &&
+          startRow - endRow === -1 &&
+          Math.abs(startCol - endCol) === 1 &&
+          endSquare.querySelector("img") !== null
         ) {
           return true;
         }
