@@ -80,7 +80,7 @@ for (let row = 0; row < 8; row++) {
             return false;
           }
         }
-        // Move logic for white pawns.
+        // Move logic for white pawn.
         // Checking if the white pawn is on its starting sqaure for its double jump.
         else if (
           pieceType === "P" &&
@@ -122,7 +122,9 @@ for (let row = 0; row < 8; row++) {
           startCol === endCol
         ) {
           return true;
-        } else if (
+        }
+        // Logic for black pawn capture.
+        else if (
           pieceType === "pd" &&
           startRow - endRow === -1 &&
           Math.abs(startCol - endCol) === 1 &&
