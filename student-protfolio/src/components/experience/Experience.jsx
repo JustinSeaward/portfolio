@@ -10,7 +10,7 @@ const Experience = () => {
         "Diagnosed, repaired, and maintained different types of rotating equipment.",
         "Interpreted technical blueprints and schematics to rebuild mechanical seals.",
         "Executed monthly preventive maintenance schedules for grease and oil changes.",
-        "Mentored apprentices and collaborated effectively within diverse teams.",
+        "Mentored apprentices and collaborated effectively within a teams.",
       ],
     },
     {
