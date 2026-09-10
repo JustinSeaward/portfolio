@@ -9,9 +9,9 @@
   background: var(--card-bg);
   padding: 1.5rem;
   border-radius: 8px;
-  border: 1px solid #334155;
-  transition: border-color 0.3s;
+  border: var(--border-color);
   transition:
+    border-color 0.3s,
     transform 0.3s,
     box-shadow 0.3s;
   display: flex;
@@ -23,11 +23,11 @@
 .project-card:hover {
   border-color: var(--accent-color);
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(20, 214, 248, 0.2);
+  box-shadow: 0 10px 20px var(--accent-glow);
 }
 
 .tech-tag {
-  background: #334155;
+  background: var(--border-color);
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
   font-size: 0.8rem;
