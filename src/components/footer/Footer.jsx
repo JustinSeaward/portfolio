@@ -3,11 +3,11 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <footer>
-        <p>© 2024 Student Portfolio. Built with React & Vite.</p>
+      <footer className="site-footer">
+        <p>© 2026 Full Stack Developer Portfolio</p>
       </footer>
     </>
-  );
+  );  
 };
 
 export default Footer;

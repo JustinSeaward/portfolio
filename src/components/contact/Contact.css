@@ -23,18 +23,18 @@
   gap: 0.5rem;
 }
 
-label {
+.contact-form label {
   font-size: 0.9rem;
   font-weight: bold;
 }
 
-input,
-textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 0.8rem;
   border-radius: 5px;
-  border: 1px solid #334155;
-  background: #1e293b;
-  color: #fff;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--accent-color-white);
   font-family: inherit;
 }
 
