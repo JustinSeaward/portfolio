@@ -1,14 +1,12 @@
-footer {
+site-footer {
   height: 50px;
   width: 100%;
   background: var(--accent-color);
-  color: var(--bg-color);
-  border-radius: 1rem;
-  margin: 0%;
-  padding: 0%;
+  color: var(--on-accent);
+  border-radius: var(--radius);
 }
 
-footer p {
+.site-footer p {
   text-align: center;
   margin: auto;
   padding-top: 12px;
