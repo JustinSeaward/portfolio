@@ -8,12 +8,15 @@
 .project-card {
   background: var(--card-bg);
   padding: 1.5rem;
-  border-radius: 8px;
-  border: var(--border-color);
+  border-radius: var(--radius);
+  border-top: var(--bevel-top);
+  border-left: var(--bevel-left);
+  border-right: var(--bevel-right);
+  border-bottom: var(--bevel-bottom);
   transition:
-    border-color 0.3s,
-    transform 0.3s,
-    box-shadow 0.3s;
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,14 +25,14 @@
 
 .project-card:hover {
   border-color: var(--accent-color);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px var(--accent-glow);
+  transform: var(--lift-hover);
+  box-shadow: var(--shadow-hover);
 }
 
 .tech-tag {
   background: var(--border-color);
   padding: 0.2rem 0.6rem;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   font-size: 0.8rem;
   margin-right: 0.5rem;
 }
