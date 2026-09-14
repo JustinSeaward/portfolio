@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "./components/navbar/Narbar";
 import Landing from "./pages/landing-page/Landing";
 import Projects from "./components/project/Project";
@@ -7,14 +6,14 @@ import Experience from "./components/experience/Experience";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import ThemeToggle from "./components/theme-toggle/ThemeToggle";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <>
       <div className="main-container">
+        <ThemeToggle />
         <Navbar />
         <Landing />
         <Skills />
@@ -24,7 +23,6 @@ function App() {
         <Contact />
         <Footer />
       </div>
-    </>
   );
 }
 

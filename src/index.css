@@ -1,3 +1,4 @@
+/*Modern theme*/
 :root {
   --bg-color: #0f172a;
   --card-bg: #1e293b;
@@ -27,6 +28,37 @@
   --lift-hover: translateY(-5px);
   --shadow-hover: 0 10px 20px var(--accent-glow);
 
+}
+
+/* ---- Windows 98 theme ---- */
+:root[data-theme="win98"] {
+  --bg-color: #008080;
+  --card-bg: #c0c0c0;
+  --border-color: #808080;
+  --field-bg: #ffffff;
+
+  --text-color: #000000;
+  --text-muted: #404040;
+  --text-heading: #000000;
+
+  --accent-color: #000080;
+  --on-accent: #ffffff;
+  --accent-glow: transparent;
+
+  --font-body: Tahoma, "MS Sans Serif", Verdana, Geneva, sans-serif;
+  --line-height: 1.4;
+
+  --radius: 0;
+  --radius-sm: 0;
+
+  --bevel-top: 2px solid #ffffff;
+  --bevel-left: 2px solid #ffffff;
+  --bevel-right: 2px solid #808080;
+  --bevel-bottom: 2px solid #808080;
+
+  --transition: 0s;
+  --lift-hover: none;
+  --shadow-hover: none;
 }
 
 *,

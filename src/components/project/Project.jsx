@@ -5,14 +5,14 @@ const Projects = () => {
     {
       title: "Steem-App",
       description:
-        "E-Commerce Web Application where you can browse and add games to a shopping cart. There is a Log-in page with three different users and each with there own wallet amounts. Check it out here ---> https://s2-final.netlify.app/",
+        "E-Commerce Web Application where you can browse and add games to a shopping cart. There is a Log-in page with three different users and each with there own wallet amounts.",
       tech: ["React", "Vite", "CSS"],
       link: "https://github.com/JustinSeaward/S2_Sprint_Final",
     },
     {
       title: "Portfolio Site",
       description:
-        "This website! Built to showcase my journey as a student then a working developer. This site will grow with me as long as im developing and leaning new way to code new ideas.",
+        "This website! Built to showcase my journey as a developer. This site will grow with me as long as im developing and learning new ways to code new ideas.",
       tech: ["React", "Vite", "CSS"],
       link: "https://github.com/JustinSeaward/Portfolio",
     },
@@ -26,8 +26,8 @@ const Projects = () => {
     {
       title: "Mo's Lawn Care Service.",
       description:
-        "Mo’s Lawncare Services is a company that will perform maintenance on your lawn by appointment. Allow the user to enter the Customer name, street address, city, phone number (999-999-9999), and the total number of square feet forthe property (#####).",
-      tech: ["Javascript, HTML, CSS"],
+        "Mo's Lawncare Services is a company that will perform maintenance on your lawn by appointment. Allow the user to enter the Customer name, street address, city, phone number (999-999-9999), and the total number of square feet forthe property (#####).",
+      tech: ["Javascript", "HTML", "CSS"],
       link: "https://github.com/JustinSeaward/QAP-3-Files-JS",
     },
     {
@@ -54,9 +54,9 @@ const Projects = () => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="tech-stack">
-              {project.tech.map((t, i) => (
-                <span key={i} className="tech-tag">
-                  {t}
+              {project.tech.map((tech, index) => (
+                <span key={index} className="tech-tag">
+                  {tech}
                 </span>
               ))}
             </div>
