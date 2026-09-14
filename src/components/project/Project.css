@@ -29,10 +29,22 @@
   box-shadow: var(--shadow-hover);
 }
 
+.project-card p {
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .tech-tag {
   background: var(--border-color);
   padding: 0.2rem 0.6rem;
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
-  margin-right: 0.5rem;
 }

@@ -1,0 +1,24 @@
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-top: var(--bevel-top);
+  border-left: var(--bevel-left);
+  border-right: var(--bevel-right);
+  border-bottom: var(--bevel-bottom);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.theme-toggle:active {
+  border-top: var(--bevel-bottom);
+  border-left: var(--bevel-bottom);
+  border-right: var(--bevel-top);
+  border-bottom: var(--bevel-top);
+}
