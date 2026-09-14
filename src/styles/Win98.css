@@ -1,0 +1,28 @@
+/* Structural overrides that CSS variables can't express*/
+
+/* Cards: re-assert the bevel on hover*/
+[data-theme="win98"] .project-card:hover,
+[data-theme="win98"] .skill-card:hover {
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+}
+
+/*Buttons: modern theme has border:none, Windows 98 needs the full bevel*/
+[data-theme="win98"] .btn,
+[data-theme="win98"] .submit-btn {
+  border-top: var(--bevel-top);
+  border-left: var(--bevel-left);
+  border-right: var(--bevel-right);
+  border-bottom: var(--bevel-bottom);
+}
+
+/*Button "press in" effect, swaps the light and drak sides*/
+[data-theme="win98"] .btn:active,
+[data-theme="win98"] .submit-btn:active {
+  border-top: var(--bevel-bottom);
+  border-left: var(--bevel-bottom);
+  border-right: var(--bevel-top);
+  border-bottom: var(--bevel-top);
+}
