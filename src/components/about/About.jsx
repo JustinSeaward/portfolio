@@ -2,7 +2,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="about-content">
         <h2>About Me</h2>
 
@@ -19,18 +19,20 @@ const About = () => {
             performance.
           </p>
           <p>
-            Now, after a back injury and having to change course from my career
-            I'm apply that same problem-solving mindset to software. Instead of
+            Now, after a back injury and having to change course from my career,
+            I'm applying that same problem solving mindset to software. Instead of
             replacing gears, chasing hydraulic lines and performing perventivent
             maintance, I'm debugging code, optimizing component structures and
             chasing .CSS alignment.
           </p>
           <p>
             When I'm not coding, im honing my skills on the{" "}
-            <strong>Chess</strong> ♟️ board, playing everyday for over a 1000
+            <strong>Chess</strong> ♟️ board, I have made moves everyday for over a thousand
             days! Developing a different strategy with every move. Two things I
             have learned playing chess: "A good plan is better then no plan" and
-            "Never quit and never surrender".
+            "Never quit and never surrender". I also still fix anything that
+            is broken, from chrildrens toys to anything with propultion. Making 
+            something work again is a feeling of acomplishment that is hard to beat.
           </p>
         </div>
       </div>

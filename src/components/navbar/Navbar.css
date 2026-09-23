@@ -1,0 +1,41 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--card-bg);
+  border-bottom: var(--bevel-bottom);
+  border-radius: var(--radius);
+}
+
+.nav-brand {
+  font-weight: bold;
+  color: var(--text-heading);
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-color);
+}
+
+@media (hover: hover) {
+  .nav-links a:hover {
+    color: var(--on-accent);
+    background: var(--accent-color);
+  }
+}

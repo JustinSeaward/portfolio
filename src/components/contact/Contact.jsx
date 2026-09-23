@@ -34,10 +34,10 @@ const Contact = () => {
       <h2>Get In Touch</h2>
       <p>
         I'm currently working towards new opportunities. Whether you have a
-        question or just want to say hi, I'll try my best to get back to you!
+        question or just want to say hi, I'll get back to you as soon as I can!
       </p>
 
-      {/* We attach the 'ref' and the 'onSubmit' handler here */}
+      {/* Contact form */}
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="title">Title</label>
@@ -49,9 +49,9 @@ const Contact = () => {
           />
         </div>
 
+        {/* Input field for users name */}
         <div className="form-group">
           <label htmlFor="user_name">Name</label>
-          {/* Note: 'name' attribute must match your EmailJS template variables */}
           <input
             type="text"
             name="user_name"
@@ -60,11 +60,13 @@ const Contact = () => {
           />
         </div>
 
+        {/* Input field for the date/time */}
         <div className="form-group">
           <label htmlFor="time">Date/Time</label>
           <input type="text" name="time" required placeholder="Date/Time..." />
         </div>
 
+        {/* Input field for users email */}
         <div className="form-group">
           <label htmlFor="user_email">Email</label>
           <input
@@ -75,6 +77,7 @@ const Contact = () => {
           />
         </div>
 
+        {/* Input field for users message */}
         <div className="form-group">
           <label htmlFor="message">Message</label>
           <textarea
@@ -84,6 +87,7 @@ const Contact = () => {
           ></textarea>
         </div>
 
+        {/* Submit button */}
         <button type="submit" className="submit-btn">
           Send Message
         </button>

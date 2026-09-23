@@ -26,3 +26,21 @@
   border-right: var(--bevel-top);
   border-bottom: var(--bevel-top);
 }
+
+[data-theme="win98"] .navbar {
+  padding: 2px 4px;
+  gap: 0;
+  border-top: var(--bevel-top);
+  border-left: var(--bevel-left);
+  border-right: var(--bevel-right);
+  border-bottom: var(--bevel-bottom);
+}
+
+[data-theme="win98"] .nav-links a {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+[data-theme="win98"] .nav-brand {
+  padding: 4px 8px;
+}
